@@ -1,4 +1,50 @@
+DRAFT — OPEN-SOURCE REFERENCE RELEASE. NOT A COMMERCIAL PRODUCT.
 
+This software is working and well along, but it is being released as a draft. Smith-Atlas LLC is not a software company and does not sell, support, maintain, or warrant this tool. It is published under the Apache 2.0 license so that developers, attorneys, and organizations with the resources to finish, harden, and support it can take it the rest of the way. Parts of the documentation describe build and packaging steps that have not yet been carried out; those are marked as such.
+
+Contract redlining that happens inside Microsoft Word, against your playbook, on the AI engine you choose — including one that runs on your own hardware.
+
+Open a contract in Word, pick a playbook from the task pane, and click once. The Contract Negotiation Assistant reviews the document against your organization's positions and writes native tracked changes and margin comments directly into the open document, exactly as an attorney or contracting professional would in Word's Review pane. Accept or reject each change one at a time, the way you already work.
+
+Built by an attorney and contracts professional for the people who do this work every day: attorneys, procurement and purchasing offices, contract managers, and research administrators.
+
+What it does:
+
+- Works inside Word, not beside it. A Word add-in opens a task pane with three controls: Playbook, AI Engine, and Review Depth. There's no copying text into a chat window and no re-importing a file. The redline lands in the document you already have open.
+- Produces real tracked changes. Every edit is a genuine Word revision that is accept/reject-able, attributed, and reversible. Each one comes with a margin comment identifying the playbook rule behind it and explaining the issue in plain language.
+- Marks up the way a lawyer or contracting professional does. It amends the section that already covers a topic instead of bolting on a contradictory clause. It strikes the fewest words necessary, and it places new language beside the terms it relates to. It leaves alone existing language that already achieves a rule's goal, even when the wording differs from the playbook.
+- Never drops anything silently. Any change it can't apply cleanly becomes an "ACTION NEEDED" margin comment with the full suggested language, so you can place it yourself. Every run opens with a comment disclosing that the markup was AI-generated and naming the playbook used.
+- Lets you choose where your contracts go. It connects to five cloud engines: Gemini, Anthropic, OpenAI-compatible, Google Vertex AI, and Amazon Bedrock. It can also use a Local Secure Engine, a self-hosted Ollama or vLLM model, for organizations that require contracts never to leave their own infrastructure. All credentials stay on the server and are never exposed to the Word add-in.
+- Applies your rules, not generic ones. Every legal position comes from a playbook, and each rule is tagged Mandatory or Optional. Playbooks are ordinary folders, so adding a new one makes it appear in the dropdown automatically.
+- Keeps an audit trail without keeping your secrets. Every run is logged to a local database: time, playbook, engine, model, revision count, and status. User names and filenames are stored only as one-way hashes.
+
+How it has been tested:
+
+- Tested end to end on Windows and macOS with Microsoft Word, against a cloud engine using an API key and against the Local Secure Engine.
+- The local configuration was tested by running Llama 4 Maverick on a rented cloud GPU (RunPod), standing in for an organization's own server, because no desktop machine can run a model that size. It has not yet been tested on physical on-premise hardware.
+
+What it does not do:
+
+- It is not a lawyer, and its output is not legal advice. Every redline is AI-generated and must be reviewed by a qualified attorney or contracting professional before any contract is finalized or executed. It does not create an attorney-client relationship.
+- It is not a finished product. There is no installer, no support, no updates, and no warranty. Someone with development and IT experience will need to build it from the guide, deploy it, and take responsibility for securing it.
+- The playbooks are a starting point, not your positions. Coordinate with your own counsel and contracting professionals to adapt each playbook to your organization's requirements, risk tolerance, and governing law. A playbook you haven't reviewed is a playbook you haven't approved.
+- It does not decide your legal positions. It enforces the ones written in the playbook. If your position isn't in the playbook, the tool won't invent it.
+- It may not renumber your sections. New sections inserted into contracts with typed (non-automatic) numbering are flagged for you to number, because a wrong number silently breaks every cross-reference.
+- It will not catch everything. A human still must read the contract.
+
+What you'll need:
+
+- Microsoft Word (tested on Windows and macOS) and Node.js version 24 or higher.
+- An AI engine. That means either a paid-tier cloud API account, or a self-hosted server with a GPU powerful enough to run a large open model. If you use a cloud engine, you are STRONGLY ENCOURAGED to use an ENTERPRISE or paid tier with a contractual commitment not to use your contracts to train the provider's models.
+- For deployment beyond a single machine: a server with an HTTPS certificate (Word requires it) and an encrypted disk for the audit log and configuration file.
+- Comfort with a terminal and a code editor. The guide is written step by step, but this is a developer build.
+
+What's included:
+
+- the complete source code: the Node.js backend, the AI engine adapters, and the Word add-in
+- the draft Master Development Setup, Testing, and Packaging Guide, which covers architecture, environment setup, engine configuration, a four-gate testing protocol, and build documentation
+- starting contracting playbooks
+Mac and Windows add-in installation scripts
 
 A short overview video is available at:
 https://drive.google.com/file/d/19cfOCgobCPNi-nm7ZQKuz9xEtpgjg-t8/view?usp=sharing
