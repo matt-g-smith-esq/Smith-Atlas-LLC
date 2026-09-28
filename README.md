@@ -54,7 +54,7 @@ Smith-Atlas works with organizations to put AI tools to work, including these:
 - **Custom AI tools:** building new tools for your own workflows, such as policy drafting, RFP development and response, contract data extraction, transactional auditing, and more.
 - **Adoption and change management:** consultations, workshops, and training that build AI literacy and help teams, including skeptical ones, actually use the tools.
 
-Visit **[www.smith-atlas.com](https://www.smith-atlas.com)** to learn more or to book a free 15-minute discovery session. You can contact us directly at **matt@smith-atlas.com**.
+Visit **[www.smith-atlas.com](https://www.smith-atlas.com)** to learn more or to book a free 15-minute discovery session. You can contact us directly at **matt@smith-atlas.com** or **gigi@smith-atlas.com**.
 
 ## License
 
