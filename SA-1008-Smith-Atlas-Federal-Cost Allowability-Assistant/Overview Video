@@ -1,2 +1,55 @@
+Ask whether a cost can be charged to your federal award, and get a structured answer grounded in the actual cost principles: the three-part test
+(allowable, allocable, reasonable), the precise provision and subsection, and the version date of the text it relied on. While it provides a 
+recommended approach with backup, the assistant always encourages users to make the ultimate decisions and ask their sponsored programs or 
+contracting office if they have additional questions.
+
+Built by a research administrator and attorney for the people who field these questions every day: sponsored programs and research administration
+offices, departmental grant managers, contracting officers, and the PIs who ask them "can I charge this?"
+
+What it does:
+
+- Runs the three-part test, every time. It separates allowability, allocability, and reasonableness instead of collapsing them, and names the
+specific test a cost fails (e.g., the allocability trap on an end of award equipment buy, for instance) with the pinpoint citation to match.
+- Cites to the subsection, with a version date. Every recommendation carries the controlling provision down to the subsection (e.g., 2 CFR 200.405(a)
+or FAR 31.201-4(b)), the applicable Selected Item of Cost, and the effective date of the text it used. 
+- Routes you to the right cost allowability regulations automatically. It resolves Uniform Guidance vs. FAR cost principles from your organization
+type and award type, names the routing clause, if applicable, so you see why (FAR 31.303 / 31.603 / 31.703), and flags Cost Accounting Standards
+(CAS) when your configuration triggers it.
+- Spots the issues users miss. Cost transfers, direct-vs-F&A classification, prior approval timing, the F&A/MTDC rebudgeting trap, participant
+support, pre-award and closeout timing, salary caps and Institutional Base Salary, change in scope: it screens every fact pattern against these
+and asks the targeted follow-up questions to get to the best recommendation.
+- Tailors to your setup. Configure it once for your institution — and, optionally, for a single sponsor (NIH, NSF, DOE, and others) — and it raises
+only the cost allowability regulations that can actually apply to you and treats your award and sponsor's manual(s) as a first-check overlays.
+
+What it does not do:
+ 
+- It is not your sponsored programs office, and its output is not a determination. Every analysis is AI-generated and advisory only. A qualified
+human makes the final call, and figures and citations should be independently verified before you rely on them.
+- It does not authorize spend or bind your institution. It cannot approve a cost, submit a prior approval, change a ledger, or guarantee that a
+cost will pass an audit or clear central review.
+- It is only as current as the texts you give it. It reasons from the regulations and sponsor files loaded into its Knowledge. Regulations and
+sponsor guidance change; an out-of-date upload produces an out-of-date answer, which is why it always states the version it used.
+- It won't invent your institution's policy. Where a rule turns on your own written policy or cost accounting practice (travel, extra service pay,
+direct/indirect treatment), it marks the conclusion contingent and invites you to confirm, rather than guessing what your policy says. You can, however,
+upload policies where they're applicable, so the assistant has more information.
+- It stays in its lane. It addresses federal cost allowability, allocability, and reasonableness only. Scientific merit, legal briefs, and non-federal
+accounting questions get redirected, not answered.
+
+What you'll need:
+ 
+- A subscription to a capable AI assistant (Claude, ChatGPT, Gemini, Copilot, or an in-house solution) with a configurable assistant or project that
+supports a Knowledge/Context area for file uploads.
+- The current regulation texts it cites against (Subpart E to 2 CFR Part 200 and, where applicable, FAR Subpart 31.2), plus any sponsor guidance or
+prior approval matrix you want it to apply, uploaded to the assistant's Knowledge under the exact filenames the setup guide specifies. Setup takes about
+20 minutes and is covered step by step instructions in the included documentation.
+ 
+
+What's included:
+ 
+- The Loader system instructions (identity, configuration, and session intake)
+- The Process system instructions file (three-part test, issue-spotting checks, and output format)
+- Setup and use instructions
+
+
 A short overview video is available at:
 https://drive.google.com/file/d/1RElUDpf3GToBvlefVD1Pho-B5j4tLjs_/view?usp=drive_link
