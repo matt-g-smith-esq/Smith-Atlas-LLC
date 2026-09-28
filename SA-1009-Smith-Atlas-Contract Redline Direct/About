@@ -1,0 +1,56 @@
+Contract review that comes back as a real Word redline — not a summary of one.
+ 
+Attach your contract, name your playbook, and get your own .docx back with native tracked changes and margin comments. The mark ups are
+against your organization's positions exactly as an attorney or contracting professional would do it in Word's Review pane. Accept or reject
+each change one at a time, the way you already work.
+
+Built by an attorney and contracts professional for the people who do this work every day: attorneys, small business owners, procurement and
+purchasing offices, contract managers, and research administrators.
+
+What it does:
+ 
+- Produces real tracked changes. Every edit is a genuine Word revision that is accept/reject-able, attributed, reversible. Not colored text
+pretending to be a redline. Not a chat window full of advice you then implement by hand.
+- Returns your document, not a retyped copy. It edits your file in place: formatting, numbering, tables, and every word it isn't deliberately
+changing pass through untouched. A built-in validation gate mechanically proves it, and rejecting every tracked change reproduces your original
+exactly. Inserted text matches your contract's own font and heading style.
+- Marks up the way a lawyer or contracting professional does. It amends the section that already covers a topic instead of bolting a contradictory
+clause onto the end. Liability caps land inside your liability section as a proviso. It strikes the fewest words necessary rather than gutting
+whole paragraphs. New clauses go beside the terms they relate to.
+- Never drops anything silently. Any change it can't apply cleanly becomes an "ACTION NEEDED" margin comment containing the full suggested
+language, so you can place it yourself. You always see everything it wanted to do.
+- Applies your rules, not generic ones. Every legal position comes from a playbook. Six starting playbooks are included: revenue services,
+sponsored research, expense services (general, SaaS, and software), and mutual NDAs. 
+
+What it does not do:
+ 
+- It is not a lawyer, and its output is not legal advice. Every redline is AI-generated and must be reviewed by a qualified attorney or contracting
+professional before any contract is finalized or executed. It does not create an attorney-client relationship.
+- The playbooks are a starting point, not your positions. The included playbooks reflect common contracting postures, and they are written to be
+edited by your organization. Before relying on them, coordinate with your own legal counsel and contracting professionals to adapt each playbook
+to your organization's requirements, risk tolerance, and governing law. A playbook you haven't reviewed is a playbook you haven't approved.
+- It does not decide your legal positions. It enforces the ones written in the playbook. If your position isn't in the playbook, the tool won't
+invent it.
+- It may not renumber your sections. Where a contract uses typed (non-automatic) numbering, new sections are inserted unnumbered and flagged for
+you because a wrong number silently breaks every cross-reference in the document.
+- It will not catch everything. It reviews against your playbook's rules. A human still must read the contract.
+- It is not a hosted service. It runs inside your own AI assistant subscription. 
+
+What you'll need:
+ 
+- A subscription to a code-capable AI assistant (Claude, ChatGPT, and similar tools) with code execution and file creation enabled. You are
+STRONGLY ENCOURAGED to obtain an ENTERPRISE-licensed tool with engineered controls or a contractual commitment to not use your contracts to train
+your provider’s models.
+- Word (.docx) contracts work best; PDFs are supported. Setup takes about ten minutes and is covered step by step in the included instructions.
+
+What's included:
+
+- six contracting playbooks
+- the redline engine
+- the assistant instructions and process file
+- an optional accelerator for Claude using Claude Skills
+- setup-and-use documentation
+
+
+A short overview video is available at:
+https://drive.google.com/file/d/1bkzgT35-JLl0-oRJ3NcLtRphpWNMEwS9/view?usp=sharing
