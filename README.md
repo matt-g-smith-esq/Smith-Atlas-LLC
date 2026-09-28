@@ -15,10 +15,10 @@ If you'd like help putting any of these tools to work, or building something new
 | Tool | What it does | What it is |
 | --- | --- | --- |
 | [**SA-1006 Agent Generator Assistant**](SA-1006-Smith-Atlas-Agent-Generator-Assistant) | Interviews you about your expertise and produces a complete, guardrailed system prompt for your own custom AI assistant. No prompt-writing experience needed. | System instructions for any AI assistant platform |
-| [**SA-1007 Policy Evaluation & Drafting Assistant**](SA-1007-Smith-Atlas-Policy-Evaluation-Drafting-Assistant) | Benchmarks peer institutions' policies with traceable citations and drafts institutional policy on your templates, screened against 2 CFR 200, the FAR, and NSF/NIH terms. | System instructions for any AI assistant platform |
+| [**SA-1007 Policy Evaluation & Drafting Assistant**](SA-1007-Smith-Atlas-Policy-Evaluation-Drafting-Assistant) | Benchmarks peer institutions' policies with traceable citations and drafts institutional policies on your templates, screened against 2 CFR Part 200, the FAR, and NSF/NIH terms. | System instructions for any AI assistant platform |
 | [**SA-1008 Federal Cost Allowability Assistant**](SA-1008-Smith-Atlas-Federal-Cost%20Allowability-Assistant) | Answers "can I charge this to my award?" by running the allowable / allocable / reasonable test with subsection-level citations and version dates. | System instructions for any AI assistant platform |
 | [**SA-1009 Contract Redline Direct**](SA-1009-Smith-Atlas-Contract%20Redline%20Direct) | Reviews a contract against your playbook and returns your own Word file with native tracked changes and margin comments. | Instructions and a redline engine for a code-capable AI assistant (with an optional Claude Skill) |
-| [**SA-1011 Solicitation Navigator**](SA-1011-Smith-Atlas-Solicitation-Navigator) | Extracts every requirement from a funding solicitation and its amendments into a 39-element table, with page-level citations for each. | System instructions for any AI assistant platform |
+| [**SA-1011 Solicitation Navigator**](SA-1011-Smith-Atlas-Solicitation-Navigator) | Extracts requirements from a funding solicitation and its amendments into a 39-element table, with page-level citations for each. | System instructions for any AI assistant platform |
 | [**SA-2001H Contract Negotiation Assistant**](SA-2001H-Smith-Contract-Negotiation-Assistant) | A Microsoft Word add-in that redlines the open document against your playbook, using a cloud AI engine or one hosted on your own infrastructure. **Draft release.** | Software (Node.js backend and Word add-in), with a full build guide |
 
 Each folder contains an **About** file describing the tool in detail, the files you need, setup instructions, and a link to a short overview video.
@@ -42,7 +42,7 @@ The tools share a few design principles:
 ## Important
 
 - **These tools do not provide legal advice**, and using them does not create an attorney-client relationship. All output is AI-generated and must be reviewed by a qualified professional before you rely on it.
-- **Included playbooks and configurations are starting points.** Review and adapt them with your own counsel and subject-matter experts before use.
+- **Included playbooks and configurations are starting points.** Review and adapt them with your own counsel and subject matter experts before use.
 - **Protect your data.** You are strongly encouraged to use an enterprise-licensed AI platform, or one with a contractual commitment not to train on your content, before uploading contracts or other sensitive documents.
 - **Provided as is.** Under the Apache 2.0 license, these tools are provided without warranty of any kind. The SA-2001H Contract Negotiation Assistant, in particular, is a draft that requires development work before production use.
 
