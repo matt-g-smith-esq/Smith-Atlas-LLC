@@ -1,0 +1,30 @@
+Research and creative activity solicitations bury critical requirements across dozens of pages, amendments, and cross-referenced documents.
+The Smith-Atlas Solicitation Navigator reads the sponsor solicitation your team uploads (e.g., RFP, NOFO, FOA, or BAA, plus any amendments)
+and extracts its requirements into a structured, traceable table spanning ten categories and 39 elements, from deadlines and page limits to
+eligibility bars, indirect cost rules, and submission portals. 
+
+Every extracted element carries a precise citation, including the source file, printed page, PDF page, and section identifier, so a Principal
+Investigator (PI) or pre-award research administrator can navigate straight to the governing text and verify it. When the solicitation is
+silent on an element, it says so plainly.
+
+The system instructions are AI tool agnostic, so you can easily implement them into your preferred platform, including:
+
+Gemini (Gems)
+Claude (Projects)
+ChatGPT (GPTs)
+Microsoft Copilot (Agents)
+Any in-house AI Assistants or Agents
+
+Getting started requires minimal setup and zero coding experience. Simply copy and paste the comprehensive system instructions into your AI tool,
+then upload the accompanying process file to its knowledge area.
+
+What Your Team Gets in Every Extraction:
+ 
+- A comprehensive ten-category, 39-element requirements table.
+- Precise citations for every substantive answer, including the source file, printed page, PDF page, and section, to simplify verification.
+- Expanded detail on the elements that get proposals rejected, such as deadlines, page and formatting limits, budget ceilings, indirect cost and
+redaction rules, required forms, and eligibility restrictions.
+- Requirements changed by amendments are traced through the full chain, so your team can see the governing version and historical development.
+
+A short overview video is available at:
+https://drive.google.com/file/d/1xCLt8AWIZN9jf8gK71BZit7DcCa9NCXY/view?usp=sharing
