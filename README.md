@@ -6,7 +6,7 @@ Each tool was designed by an attorney and contracts professional with years of e
 
 ## Why these tools are here
 
-These tools were originally offered for sale on the Smith-Atlas website. We have decided to make them freely available instead, so that more organizations can benefit from them and see how we approach AI in high-stakes work. Our focus at Smith-Atlas is helping organizations *adopt* AI well: the implementation, workflow design, training, and change management that turn a good tool into a working part of how a team operates.
+These tools were originally offered for license on the Smith-Atlas website. We have decided to make them freely available instead, so that more organizations can benefit from them and see how we approach AI in high-stakes work. Our focus at Smith-Atlas is helping organizations *adopt* AI well: the implementation, workflow design, training, and change management that turn a good tool into a working part of how a team operates.
 
 If you'd like help putting any of these tools to work, or building something new, see [Need help?](#need-help) below.
 
