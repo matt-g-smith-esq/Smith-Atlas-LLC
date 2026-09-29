@@ -6,7 +6,9 @@ Each tool was designed by an attorney and contracts professional with years of e
 
 ## Why these tools are here
 
-These tools were originally offered for license on the Smith-Atlas website. We have decided to make them freely available instead, so that more organizations can benefit from them and see how we approach AI in high-stakes work. Our focus at Smith-Atlas is helping organizations *adopt* AI well: the implementation, workflow design, training, and change management that turn a good tool into a working part of how a team operates.
+We believe that AI tools need a lower barrier to entry for organizations of all sizes and financial realities. Currently, teams face two major hurdles: the high cost of enterprise software (where niche tools, e.g., contracting negotiation, easily cost $1,800–$3,600 per user per year) and the internal challenge of preparing their people for the shift.
+
+This repository is one of our active efforts to improve AI access and equity. At Smith-Atlas, our focus is helping organizations not just access AI, but adopt it successfully. Through thoughtful implementation, workflow design, training, and change management, we help teams turn a good tool into a natural extension of how they operate.
 
 If you'd like help putting any of these tools to work, or building something new, see [Need help?](#need-help) below.
 
