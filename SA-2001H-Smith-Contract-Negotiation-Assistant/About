@@ -1,7 +1,7 @@
 DRAFT — OPEN-SOURCE REFERENCE RELEASE. NOT A COMMERCIAL PRODUCT.
 
 This software is working and well along, but it is being released as a draft. Smith-Atlas LLC is not a software company and does not sell,
-support, maintain, or warrant this tool. It is published under the Apache 2.0 license so that developers, attorneys, and organizations with
+support, maintain, or warrant this tool. It is published under the MIT License so that developers, attorneys, and organizations with
 the resources to finish, harden, and support it can take it the rest of the way. Parts of the documentation describe build and packaging
 steps that have not yet been carried out; those are marked as such.
 
