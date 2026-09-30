@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 # ============================================================================
 # Copyright 2026 Smith-Atlas LLC (SA-1009-V1).
-# Licensed under the Apache License, Version 2.0 (the "License"); you may not use these files 
-# except in compliance with the License. You may obtain a copy of the License at http://
-# www.apache.org/licenses/LICENSE-2.0.
+# Licensed under the MIT License (the "License"); you may not use these files 
+# except in compliance with the License. 
 #
 # Deterministic tracked-changes applier. Takes a .docx and a revisions JSON
 # (the schema in the assistant's instructions, Section 5) and returns the SAME
