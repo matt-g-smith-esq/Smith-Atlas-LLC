@@ -2,7 +2,7 @@
 
 This repository contains AI tools built by [Smith-Atlas LLC](https://www.smith-atlas.com) for the people who do regulatory, compliance, and contracting work every day: attorneys, contract managers, procurement offices, sponsored programs offices, and research administrators.
 
-Each tool was designed by an attorney and contracts professional with years of experience in commercial contracting and research administration. They are released here as open source under the [Apache 2.0 license](LICENSE), free to use, adapt, and build on.
+Each tool was designed by an attorney and contracts professional with years of experience in commercial contracting and research administration. They are released here as open source under the [MIT License](LICENSE), free to use, adapt, and build on.
 
 ## Why these tools are here
 
@@ -60,4 +60,4 @@ Visit **[www.smith-atlas.com](https://www.smith-atlas.com)** to learn more or to
 
 ## License
 
-Copyright 2026 Smith-Atlas LLC. Licensed under the [Apache License, Version 2.0](LICENSE). See the [NOTICE](NOTICE) file for attribution. If you build on these tools, we'd love to hear about it.
+Copyright 2026 Smith-Atlas LLC. Licensed under the [MIT License](LICENSE). See the [NOTICE](NOTICE) file for attribution. If you build on these tools, we'd love to hear about it.
