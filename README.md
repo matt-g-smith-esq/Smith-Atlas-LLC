@@ -46,7 +46,7 @@ The tools share a few design principles:
 - **These tools do not provide legal advice**, and using them does not create an attorney-client relationship. All output is AI-generated and must be reviewed by a qualified professional before you rely on it.
 - **Included playbooks and configurations are starting points.** Review and adapt them with your own counsel and subject matter experts before use.
 - **Protect your data.** You are strongly encouraged to use an enterprise-licensed AI platform, or one with a contractual commitment not to train on your content, before uploading contracts or other sensitive documents.
-- **Provided as is.** Under the Apache 2.0 license, these tools are provided without warranty of any kind. The SA-2001H Contract Negotiation Assistant, in particular, is a draft that requires development work before production use.
+- **Provided as is.** Under the MIT License, these tools are provided without warranty of any kind. The SA-2001H Contract Negotiation Assistant, in particular, is a draft that requires development work before production use.
 
 ## Need help?
 
