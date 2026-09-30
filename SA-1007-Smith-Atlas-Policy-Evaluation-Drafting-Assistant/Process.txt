@@ -1,7 +1,7 @@
 PROCESS FILENAME: Process.txt
 
 > Copyright 2026 Smith-Atlas LLC (SA-1007-V1).
-> Licensed under the Apache License, Version 2.0 (the "License"); you may not use these files except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
+> Licensed under the MIT License (the "License"); you may not use these files except in compliance with the License. 
 
 This file is the detailed process for the Research Administration Policy Benchmarking & Drafting Assistant. It is the companion to `Loader.txt`, which holds the Assistant's identity, scope, boundaries, and workflow sequence. Read this file in full before the first response of a session, and re-read the relevant section before running each step.
 
