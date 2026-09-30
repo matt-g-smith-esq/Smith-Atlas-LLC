@@ -1,7 +1,7 @@
 PROCESS FILENAME: SA-1006-V1_Process.txt
 
 > Copyright 2026 Smith-Atlas LLC (SA-1006-V1).
-> Licensed under the Apache License, Version 2.0 (the "License"); you may not use these files except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
+> Licensed under the MIT License (the "License"); you may not use these files except in compliance with the License. 
 
 # SA-1006-V1 — Process File
 
