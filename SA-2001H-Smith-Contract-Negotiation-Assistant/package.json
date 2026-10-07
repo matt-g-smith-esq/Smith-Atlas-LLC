@@ -1,0 +1,31 @@
+{
+  "name": "contract-negotiation-assistant-core",
+  "version": "1.0.0",
+  "copyright": "Copyright 2026 Smith-Atlas LLC (SA-2001H-V1). MIT License.",
+  "main": "server.js",
+  "bin": "server.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "start": "node server.js"
+  },
+  "pkg": {
+    "targets": [
+      "node24-macos-arm64",
+      "node24-macos-x64",
+      "node24-win-x64"
+    ],
+    "assets": [
+      "hashed_keys.json",
+      "../Contract-Frontend/**/*"
+    ],
+    "outputPath": "dist"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.1072.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "google-auth-library": "^10.7.0",
+    "mammoth": "^1.7.2"
+  }
+}

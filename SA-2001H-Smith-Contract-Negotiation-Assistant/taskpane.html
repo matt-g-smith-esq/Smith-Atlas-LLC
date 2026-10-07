@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contract Negotiation Assistant</title>
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            padding: 16px;
+            color: #1e293b;
+            background-color: #f8fafc;
+            margin: 0;
+            line-height: 1.5;
+        }
+        /* App title: the name of the add-in tool. Most prominent text on every screen. */
+        .app-title {
+            font-size: 1.7em;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 4px 0;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+        }
+        /* Section subheading (e.g., "Playbook Analysis", "System Setup"): secondary to the app title. */
+        h2 {
+            font-size: 1.0em;
+            color: #475569;
+            margin-top: 0;
+            margin-bottom: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+        .section-desc {
+            font-size: 0.85em;
+            margin-bottom: 20px;
+            color: #64748b;
+        }
+        .input-group {
+            margin-bottom: 16px;
+        }
+        .input-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+            font-size: 0.82em;
+            color: #475569;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 0.9em;
+            background-color: #ffffff;
+            color: #0f172a;
+            transition: border-color 0.15s ease, box-shadow 0.15s ease;
+        }
+        .input-group input:focus, .input-group select:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+        }
+        .input-group input:disabled, .input-group select:disabled {
+            background-color: #e2e8f0 !important;
+            color: #64748b;
+            cursor: not-allowed;
+            border-color: #cbd5e1;
+        }
+        .helper-text {
+            font-size: 0.75em;
+            color: #64748b;
+            margin-top: 5px;
+            display: block;
+            line-height: 1.4;
+        }
+        .two-pass-group {
+            background-color: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 12px;
+        }
+        .toggle-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            text-transform: none !important;
+            letter-spacing: normal !important;
+            font-size: 0.9em !important;
+            color: #0f172a !important;
+            margin-bottom: 0 !important;
+        }
+        .toggle-row input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            margin: 0;
+            cursor: pointer;
+            accent-color: #2563eb;
+            flex-shrink: 0;
+        }
+        .toggle-label {
+            font-weight: 600;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2563eb;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.9em;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: 600;
+            transition: background-color 0.15s ease, transform 0.05s ease;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        }
+        button:hover {
+            background-color: #1d4ed8;
+        }
+        button:active {
+            transform: scale(0.98);
+        }
+        button:disabled {
+            background-color: #cbd5e1;
+            color: #94a3b8;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        .status-message {
+            margin-top: 16px;
+            font-size: 0.85em;
+            padding: 12px;
+            border-radius: 6px;
+            min-height: 20px;
+            line-height: 1.4;
+            transition: all 0.2s ease;
+        }
+        .error {
+            background-color: #fef2f2;
+            color: #991b1b;
+            border: 1px solid #fee2e2;
+        }
+        .success {
+            background-color: #f0fdf4;
+            color: #166534;
+            border: 1px solid #dcfce7;
+        }
+        .info {
+            background-color: #eff6ff;
+            color: #1e40af;
+            border: 1px solid #dbeafe;
+        }
+        .copyright-footer {
+            text-align: center;
+            font-size: 0.7em;
+            color: #94a3b8;
+            margin-top: 40px;
+            padding-top: 16px;
+            border-top: 1px solid #e2e8f0;
+            white-space: nowrap; /* Forces text to anchor perfectly on one line */
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <!-- Shown only when the server reports that essential configuration is missing from .env.
+         All setup is done by IT in the .env file; the user never enters configuration here. -->
+    <div id="config-incomplete" style="display: none;">
+        <div class="app-title">Contract Negotiation Assistant</div>
+        <h2>Setup Incomplete</h2>
+        <p class="section-desc">This tool isn't fully configured yet. Please ask your IT administrator to complete the server configuration.</p>
+        <div id="config-missing-list" class="status-message error"></div>
+    </div>
+
+    <div id="main-interface" style="display: none;">
+        <div class="app-title">Contract Negotiation Assistant</div>
+        <h2>Playbook Analysis</h2>
+        <div class="input-group">
+            <label for="playbook-select">Select Active Playbook:</label>
+            <select id="playbook-select">
+                <option value="">Loading legal matrices...</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="engine-toggle">Active Execution Engine:</label>
+            <select id="engine-toggle">
+                <option value="cloud">Cloud Engine</option>
+                <option value="ollama">Local Secure Engine (Ollama)</option>
+            </select>
+            <span class="helper-text">Choose Cloud or Local for this review. Both are configured by your IT administrator.</span>
+            <div id="engine-config-note" class="status-message error" style="display:none; margin-top:8px;"></div>
+        </div>
+
+        <div class="input-group two-pass-group">
+            <label for="review-mode-select" class="toggle-label" style="display:block; margin-bottom:6px;">Review depth</label>
+            <select id="review-mode-select">
+                <option value="extended" selected>Extended</option>
+                <option value="standard">Standard</option>
+            </select>
+            <span class="helper-text">Extended = definitions + rule-by-rule checklist + tracked changes edits + completeness check; Standard = definitions + rule-by-rule checklist + tracked changes edits</span>
+        </div>
+
+        <button id="btn-review">Review Entire Contract</button>
+        <div id="review-status" class="status-message"></div>
+    </div>
+
+    <div class="copyright-footer">Copyright 2026 Smith-Atlas LLC (SA-2001H-V1).</div>
+
+    <script src="taskpane.js"></script>
+</body>
+</html>
