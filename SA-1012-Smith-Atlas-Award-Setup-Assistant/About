@@ -1,0 +1,33 @@
+Executed grants and contracts scatter the terms needed for award setup across dozens of pages, exhibits, and amendments.
+The Smith-Atlas Award Setup Assistant reads the fully executed agreement your team uploads (e.g., grant, cooperative agreement,
+contract, subaward, or subcontract, plus any amendments) and extracts the terms needed for post-award administration into a
+structured, traceable abstract spanning nine sections and 52 elements, from award numbers and project periods to F&A rates,
+reporting requirements, intellectual property, and termination provisions.
+
+Every extracted element carries a precise citation, including the source file, printed page, electronic page, and section
+identifier, so a post-award research administrator or data entry specialist can navigate straight to the governing text and
+verify it. When the agreement is silent on an element, it says so plainly with "N/A."
+
+The system instructions are AI tool agnostic, so you can easily implement them into your preferred platform, including:
+
+Gemini (Gems)
+Claude (Projects)
+ChatGPT (GPTs)
+Microsoft Copilot (Agents)
+Any in-house AI Assistants or Agents
+
+Getting started requires minimal setup and zero coding experience. Simply copy and paste the system instructions (Loader.txt)
+into your AI tool, then upload the accompanying process file (Process.txt) to its knowledge area.
+
+What Your Team Gets in Every Extraction:
+
+- A comprehensive nine-section, 52-element award abstract, built for setting up awards after execution.
+- Precise citations for every answer, including the source file, printed page, electronic page, and section, to simplify verification.
+- The conformed agreement: each element shows its current value first, followed by every amendment that changed it, so your team
+can see the governing term and how it developed.
+- Your choice of output: a Word document for review and manual setup, a system-neutral CSV file for importing into any research
+administration system, or both from the same extraction.
+- Answer-only values for identifiers, dates, and dollar amounts, with brief summaries of reporting, payment, and legal terms.
+
+A short overview video is available at:
+https://drive.google.com/file/d/1vm4Ff-Th9QqDas6iaNyMYKzWB9agbPwT/view?usp=sharing
